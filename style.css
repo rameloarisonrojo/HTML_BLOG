@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
+body{
+    margin: 10px 80px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav h1{
+    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 35px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #7f7e7e;
+    margin-right: 10px;
+}
+
+.articles{
+    margin-top: 30px;
+}
+.articles .article{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.articles .article .left img{
+    height: 300px;
+    width: 500px;
+}
+.articles .article .right{
+    max-width: 50%;
+    margin-left: 40px;
+}
+.articles .article .right p.date{
+    color: #7f7e7e;
+}
+.articles .article .right p.description{
+    color: #2d2d2d;
+}
+footer{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #494949;
+}
+footer h2{
+   font-size: 20px;
+   font-family: 'Crimson Text', serif; 
+}
+footer .social-media{
+    display: flex;
+}
+footer .social-media p{
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 640px){
+    body{
+        margin: 10px 20px;
+    }
+    nav .onglets{
+        margin-top: -10px;
+    }
+    .articles .article .left img{
+        height: 100%;
+        width: 100%; 
+    }
+    .articles .article .right{
+        margin: 0;
+        max-width: 100%;
+    }
+    footer .social-media{
+        margin-top: -20px;
+    }
+}
